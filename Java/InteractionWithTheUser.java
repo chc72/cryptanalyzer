@@ -7,6 +7,9 @@ public class InteractionWithTheUser {
         System.out.println("2. Шифровка с ключём на английском.");
         System.out.println("3. Расшифровка с ключём на русском.");
         System.out.println("4. Расшифровка с ключём на английчком.");
+        System.out.println("5. Из файла .txt по русски.");
+        System.out.println("6. Из файла .txt по английски.");
+        System.out.println("7. Сохранить в файл форматом .txt");
         System.out.print("Операция №:");
     }
 
@@ -20,22 +23,22 @@ public class InteractionWithTheUser {
 
             caesarCipher.encryptionRu(text, key);
             System.out.println();
-        }else {
+        } else {
             System.out.println("Вы ничего не ввели");
         }
     }
 
     public void case2(String text, int key) {
         if (text != null) {
-            key = key % CaesarCipher.alphabetRu.length;
+            key = key % CaesarCipher.alphabetEng.length;
             if (key < 0) {
-                key += CaesarCipher.alphabetRu.length;
+                key += CaesarCipher.alphabetEng.length;
             }
             text = text.replaceAll(" ", "").toLowerCase();
 
             caesarCipher.encryptionEng(text, key);
             System.out.println();
-        }else {
+        } else {
             System.out.println("Вы ничего не ввели");
         }
     }
@@ -50,12 +53,27 @@ public class InteractionWithTheUser {
 
             caesarCipher.decryptRu(text, key);
             System.out.println();
-        }else {
+        } else {
             System.out.println("Вы ничего не ввели");
         }
     }
 
     public void case4(String text, int key) {
+        if (text != null) {
+            key = key % CaesarCipher.alphabetEng.length;
+            if (key < 0) {
+                key += CaesarCipher.alphabetEng.length;
+            }
+            text = text.replaceAll(" ", "").toLowerCase();
+
+            caesarCipher.decryptEng(text, key);
+            System.out.println();
+        } else {
+            System.out.println("Вы ничего не ввели");
+        }
+    }
+
+    public void case5(String text, int key) {
         if (text != null) {
             key = key % CaesarCipher.alphabetRu.length;
             if (key < 0) {
@@ -63,9 +81,24 @@ public class InteractionWithTheUser {
             }
             text = text.replaceAll(" ", "").toLowerCase();
 
-            caesarCipher.decryptEng(text, key);
+            caesarCipher.encryptionRu(text, key);
             System.out.println();
-        }else {
+        } else {
+            System.out.println("Вы ничего не ввели");
+        }
+    }
+
+    public void case6(String text, int key) {
+        if (text != null) {
+            key = key % CaesarCipher.alphabetEng.length;
+            if (key < 0) {
+                key += CaesarCipher.alphabetEng.length;
+            }
+            text = text.replaceAll(" ", "").toLowerCase();
+
+            caesarCipher.encryptionEng(text, key);
+            System.out.println();
+        } else {
             System.out.println("Вы ничего не ввели");
         }
     }

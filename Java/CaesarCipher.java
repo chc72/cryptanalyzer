@@ -73,6 +73,7 @@ public class CaesarCipher {
             }
         }
     }
+
     public void decryptEng(String text, int key) {
         int[] keyRealisation = new int[text.length()];
         char[] fragment = new char[text.length()];
