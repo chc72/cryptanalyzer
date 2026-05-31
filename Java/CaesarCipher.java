@@ -16,10 +16,6 @@ public class CaesarCipher {
                 }
             }
         }
-        for (int i = 0; i<keyRealisation.length; i++)
-        {
-            System.out.print(alphabet[keyRealisation[i]+key]);
-        }
     }
 }
 
