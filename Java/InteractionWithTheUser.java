@@ -19,7 +19,7 @@ public class InteractionWithTheUser {
             if (key < 0) {
                 key += CaesarCipher.alphabetRu.length;
             }
-            text = text.toLowerCase();
+            text = text.toLowerCase(); //
             caesarCipher.encryptionRu(text, key);
             System.out.println();
         } else {
