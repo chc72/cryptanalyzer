@@ -19,7 +19,7 @@ public class InteractionWithTheUser {
             if (key < 0) {
                 key += CaesarCipher.alphabetRu.length;
             }
-            text = text.replaceAll(" ", "").toLowerCase();
+            //text = text.replaceAll(" ", "").toLowerCase();
 
             caesarCipher.encryptionRu(text, key);
             System.out.println();
@@ -34,7 +34,7 @@ public class InteractionWithTheUser {
             if (key < 0) {
                 key += CaesarCipher.alphabetEng.length;
             }
-            text = text.replaceAll(" ", "").toLowerCase();
+            //text = text.replaceAll(" ", "").toLowerCase();
 
             caesarCipher.encryptionEng(text, key);
             System.out.println();
@@ -49,7 +49,7 @@ public class InteractionWithTheUser {
             if (key < 0) {
                 key += CaesarCipher.alphabetRu.length;
             }
-            text = text.replaceAll(" ", "").toLowerCase();
+            //text = text.replaceAll(" ", "").toLowerCase();
 
             caesarCipher.decryptRu(text, key);
             System.out.println();
@@ -64,7 +64,7 @@ public class InteractionWithTheUser {
             if (key < 0) {
                 key += CaesarCipher.alphabetEng.length;
             }
-            text = text.replaceAll(" ", "").toLowerCase();
+            //text = text.replaceAll(" ", "").toLowerCase();
 
             caesarCipher.decryptEng(text, key);
             System.out.println();
@@ -79,7 +79,7 @@ public class InteractionWithTheUser {
             if (key < 0) {
                 key += CaesarCipher.alphabetRu.length;
             }
-            text = text.replaceAll(" ", "").toLowerCase();
+            //text = text.replaceAll(" ", "").toLowerCase();
 
             caesarCipher.encryptionRu(text, key);
             System.out.println();
@@ -94,7 +94,7 @@ public class InteractionWithTheUser {
             if (key < 0) {
                 key += CaesarCipher.alphabetEng.length;
             }
-            text = text.replaceAll(" ", "").toLowerCase();
+            //text = text.replaceAll(" ", "").toLowerCase();
 
             caesarCipher.encryptionEng(text, key);
             System.out.println();
